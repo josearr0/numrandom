@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num random</title>
+</head>
+
+<body>
+    <h1>Jose Alejandro Rodriguez Ramirez</h1>
+    <br>
+    <h1>Ejercicio donde el usuario adivina el numero: </h1>
+    <br>
+    <p>public static void main(String[] args) {<br />Scanner sc= new Scanner(System.in);<br /><br />int random =
+        (int)Math.floor(Math.random()*(1000-1+1)+1);<br />int adivino;<br />do{<br />System.out.println("Ingresa un
+        n&uacute;mero: ");<br />adivino= sc.nextInt();<br />if (adivino&gt;random)
+        {<br />System.out.println("");<br />System.out.println("EL NUMERO ES MENOR QUE "+adivino);<br />} else
+        if(adivino&lt;random){<br />System.out.println("");<br />System.out.println("EL NUMERO ES MAYOR QUE "+
+        adivino);<br />}<br />System.out.println("");<br />}while(adivino!=random);<br />if (adivino==random)
+        {<br />System.out.println("FELICIDADES! ADIVINASTE EL NUMERO: "+random);<br />}<br />}<br />}</p>
+    <br>
+    <h2>Imagen de ejemplo: </h2>
+    <br>
+    <img src="imgUsuario.png" alt="">
+    <br>
+    <h1>Ejercicio donde el sistema adivina el numero: </h1>
+    <br>
+    <p>public static void main(String[] args) {<br /><br />int min=1;<br />int max=1000;<br />int resp=0;<br />Scanner
+        sc= new Scanner(System.in);<br />int random =(int)Math.floor(Math.random()*(max-1+1)+min);<br />do{
+        <br /><br />System.out.println("&iquest;Su n&uacute;mero es "+ random+" ?");<br />System.out.println("1 (menor),
+        2 (mayor), 3 (s&iacute;)");<br />resp= sc.nextInt();<br /><br />if (resp==1) {<br />max=random;<br />random =
+        (int)Math.floor(Math.random()*(max-min+1)+min);<br />System.out.println(random);<br />} else
+        if(resp==2){<br />min=random;<br />random =
+        (int)Math.floor(Math.random()*(max-min+1)+min);<br />System.out.println(random);<br />} else
+        if(resp==3){<br />break;<br />}<br />} while(resp!=3);<br />if (resp==3) {<br />System.out.println("Adivine el
+        n&uacute;mero: "+random);<br />}<br />}</p>
+    <br>
+    <h2>Imagen de ejemplo: </h2>
+    <br>
+    <img src="imgSistema.png" alt="">
+
+</body>
+
+</html>
